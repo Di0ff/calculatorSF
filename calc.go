@@ -2,6 +2,10 @@ package calc
 
 type calculatorOperations struct{}
 
+func NewCalculator() *calculatorOperations {
+	return &calculatorOperations{}
+}
+
 func (c *calculatorOperations) Calculate(num1, num2 float64, operation string) float64 {
 
 	switch operation {
